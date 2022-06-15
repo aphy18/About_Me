@@ -17,7 +17,7 @@ const changeLineHeight = () => {
 
 function changeProperties(index, keyword, location) {
     locationCounter[index] = keyword;
-    location.style.borderColor = 'rgb(235, 174, 174)'
+    location.style.borderColor = '#8139ED'
 }
 
 
@@ -43,7 +43,7 @@ window.addEventListener('scroll',() => {
         changeLineHeight()
          
     } else {
-        locationOne.style.borderColor = 'rgb(238,218,218)'
+        locationOne.style.borderColor = '#9570DD'
         locationCounter = []
         changeLineHeight()
          
@@ -55,7 +55,7 @@ window.addEventListener('scroll',() => {
     
          
     } else {
-        locationTwo.style.borderColor = 'rgb(238,218,218)'
+        locationTwo.style.borderColor = '#bca0dc'
         locationCounter.splice(1,1)
         changeLineHeight()
     }
@@ -65,7 +65,7 @@ window.addEventListener('scroll',() => {
         changeLineHeight()
        
     } else {
-        locationThree.style.borderColor = 'rgb(238,218,218)'
+        locationThree.style.borderColor = '#9570DD'
          locationCounter.splice(2,1)
          changeLineHeight()
     }
@@ -77,7 +77,7 @@ window.addEventListener('scroll',() => {
         
       
     } else {
-        locationFour.style.borderColor = 'rgb(238,218,218)'
+        locationFour.style.borderColor = '#bca0dc'
         locationCounter.splice(3,1)
     
     }
