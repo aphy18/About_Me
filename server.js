@@ -13,5 +13,8 @@ app.get('/home',(req,res) => {
     res.render("index", { text: 'hello world' })
 })
 
+// app.get('/test', (req,res) => {
+//     res.render('BLAH')
+// })
 
 app.listen(port)

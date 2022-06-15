@@ -4,10 +4,194 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>About Me</title>
 </head>
 <body>
-    <h1>hello</h1>
+    <nav class="nav-bar">
+        <a href="#" class="nav-item" id="about-link">About</a>
+        <a href="#description" class="nav-item" id="projects-link">Projects</a>
+        <a href="#neighbourhood-watch" class="nav-item" id="goals-link">Goals</a>
+        <a href="#contact" class="nav-item" id="contact-link">Contact</a>
+    </nav>
+
+    <div class="master-container">
+        <div class="location-container">
+            <div class="location" id="location-one">About</div>
+            <div class="location" id="location-two">Projects</div>
+            <div class="location" id="location-three">Goals</div>
+            <div class="location" id="location-four">Contact</div>
+            <div class="location-line"></div>
+        </div>
+
+        <div class="text-container">
+            <div class="category" id="about">
+                <img class="my-photo"src="pictures/My_Photo/Screenshot_20211009-235226.png"></img>
+                <div class="about-one">
+                <p class="description" id="description">Hey, thanks for stopping by! My name is Aphason Aberham. I live in downtown Toronto, and am currently a 1st year IT student at York University. I wish to pursue a career in fullstack development. After graduating the Lighthouse Labs Web Development Bootcamp, my enjoyment and commitment to coding has increased, which is why I decided to continue down this route. I strive for gradual improvement in my work, feedback from others, and broadening my learning of different frameworks. But of course, one day at a time!</p>
+                <div class="hobbies">
+                    <p>Hobbies: Drawing, Basketball, Poetry, Walks</p>
+                </div>
+            </div>
+            </div>
+
+        
+            <div class="category" id="projects">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide" id="slide-1">
+
+                          <h1 class="project-name" id="neighbourhood-watch">Neighbourhood Watch</h1>
+
+                          <div class="description-box">
+                              <div class="picture-scroll-container">
+                                  <img class="NW" id="NW-1"src="pictures/NW/NW_1.png" alt="">
+                                  <img class="NW" src="pictures/NW/NW_2.png" alt="">
+                                  <img class="NW" src="pictures/NW/NW_3.png" alt="">
+                                  <img class="NW" src="pictures/NW/NW_4.png" alt="">
+                              </div>
+                              
+                              <div class="about-project-container">
+                                  <a class="github-link" href="https://github.com/yislamovic/hood-watch">Github Link</a>
+                                  <p class="project-description"><b>Decription:</b> A website made for people to report any news going on in their community. Users are able to make an account, update their reports, view other user's reports, and see where reports were published via map API</p>
+                                  <p class="frontend"><b>Frontend:</b> React.js, CSS</p>
+                                  <p class="backend"><b>Backend:</b> Express.js, Mapbox API, PostgreSQL</p>
+                              </div>
+
+                          </div>
+
+                      </div>
+                      <div class="swiper-slide" id="slide-2">
+                        <h1 class="project-name">Pokemon Music Listener</h1>
+                        <div class="description-box">
+                            <div class="picture-scroll-container" id="picture-2">
+                                <img class="NW" id="PML-1"src="pictures/PML/PML_1.png" alt="">
+                                <img class="NW" src="pictures/PML/PML_2.png" alt="">
+                                <img class="NW" src="pictures/PML/PML_3.png" alt="">
+                                <img class="NW" src="pictures/PML/PML_4.png" alt="">
+                            </div>
+                            <div class="about-project-container" id="Pokemon-about-project-container">
+                                <a class="github-link" href="https://github.com/aphy18/Pokemon-Music-Listener">Github Link</a>
+                                <p class="project-description"><b>Decription:</b> A one-page web application where you can listen to compiled music from the Pokemon franchise.</p>
+                                <p class="frontend"><b>Frontend:</b> jQuery, HTML, CSS</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <h1 class="project-name">Chatter</h1>
+                        <div class="description-box">
+                            <div class="picture-scroll-container">
+                                <img class="NW" src="pictures/CTR/CTR_1.png" id="CTR-1" alt="">
+                                <img class="NW" src="pictures/CTR/CTR_2.png" alt="">
+                                <img class="NW" src="pictures/CTR/CTR_3.png" alt="">
+                                <img class="NW" src="pictures/CTR/CTR_4.png" alt="">
+                            </div>
+                            <div class="about-project-container">
+                                <a class="github-link" href="https://github.com/aphy18/Hobby-Chat-App">Github Link</a>
+                                <p class="project-description"><b>Decription:</b> Users are able to find people with common interests and add them as friends. Users are able to message their friends in real time.</p>
+                                <p class="frontend"><b>Frontend:</b> React.js, HTML, CSS</p>
+                                <p class="backend"><b>Backend:</b> PostgreSQL, Axios, Express.js, Socket.io</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <h1 class="project-name" id="neighbourhood-watch">Tinyapp</h1>
+                          <div class="description-box">
+                              <div class="picture-scroll-container">
+                                <img class="NW" src="pictures/TA/register-page.png" id="TA-1" alt="">
+                                <img class="NW" src="pictures/TA/login-page.png" alt="">
+                                <img class="NW" src="pictures/TA/urls-display.png" alt="">
+                              </div>
+                              <div class="about-project-container">
+                                  <a class="github-link" href="https://github.com/aphy18/tinyapp_july_cohort">Github Link</a>
+                                  <p class="project-description"><b>Decription:</b> Users use CRUD operations to create, update, delete, and store URLs to their personal account. This project is used to practice the basics of express.</p>
+                                  <p class="frontend"><b>Frontend:</b> EJS, CSS</p>
+                                  <p class="backend"><b>Backend:</b> Node.js, Express.js, bcrypt</p>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+
+            </div>
+            <div class="category" id="goals">
+                    
+                <div class="goals-container" id="short-term-goals">
+                    <h2 class="goals-header">June 2022</h2>
+                    
+                        <ul class="goals-list">
+                            <li>Update and Post Resume</li>
+                            <li>Create LinkedIn Account</li>
+                            <li>Make this an Official Website</li>
+                            <li>Develop a Simple Project Using Express.js and PostgreSQL</li>
+                            <li>Reach 50% mark in Web Dev Course</li>
+                        </ul>
+                    
+                </div>
+
+                <div class="goals-container" id="mid-term-goals">
+                    <h2 class="goals-header">July - August 2022</h2>
+                   
+                        <ul class="goals-list">
+                            <li>Brush Up on React</li>
+                            <li>Create A React Project</li>
+                            <li>Reach 75% mark in Web Dev Course</li>
+                        </ul>
+                    
+                </div>
+                
+                <div class="goals-container" id="long-term-goals">
+                    <h2 class="goals-header">September - December 2022</h2>
+                    
+                        <ul class="goals-list">
+                            <li>Learn MongoDB</li>
+                            <li>Experiment with Advanced CSS</li>
+                            <li>Create Another Project for Portfolio</li>
+                            <li>Finish Web Dev Course</li>
+                        </ul>
+                    
+                </div>
+
+                <div class="goals-container" id="completed-goals-container">
+                    <h2 class="goals-header">Completed</h2>
+                        <ul class="goals-list" id="completed-goals-list">
+                            <li id="task">Create Resume Page</li>
+                        </ul>
+                </div>
+            </div>
+            <div class="category" id="contact">
+                <a href="https://github.com/aphy18" class="my-github"><i class="fa-brands fa-github"></i> aphy18</a>
+                <span class="my-email"><i class="fa-solid fa-envelope"></i> aphason1@gmail.com</span>
+            </div>
+        </div>
+
+    </div>
+
+ 
+
+
+
+    <script src="app.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="node.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
 
 </body>
 </html>
