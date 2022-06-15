@@ -9,6 +9,7 @@ console.log('dirname -->', __dirname) // the current path where server.js is
 // console.log(path.resolve('views')) // gives the path of the selected foler / file
 
 app.use(express.static("styles")) // linking external style sheet
+app.use(express.static("app")) // linking external javascript sheet
 
 
 app.get('/home',(req,res) => {
@@ -20,3 +21,5 @@ app.get('/home',(req,res) => {
 // })
 
 app.listen(port)
+
+console.log('butter')
