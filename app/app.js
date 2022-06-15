@@ -9,7 +9,7 @@ let projects = document.getElementById('projects-link')
 let goals = document.getElementById('goals-link')
 let locationCounter = []
 
-console.log('LLB -->', locationLineBefore)
+
 
 const changeLineHeight = () => {
     if (locationCounter.length < 4) {
@@ -20,6 +20,7 @@ const changeLineHeight = () => {
 function changeProperties(index, keyword, location) {
     locationCounter[index] = keyword;
     location.style.borderColor = '#8139ED'
+    location.style.color = 'white'
 }
 
 
@@ -46,9 +47,10 @@ window.addEventListener('scroll',() => {
          
     } else {
         locationOne.style.borderColor = '#9570DD'
+        locationOne.style.color = 'black'
         locationCounter = []
         changeLineHeight()
-         
+        
     }
 
     if (window.scrollY > 580) {
@@ -58,6 +60,7 @@ window.addEventListener('scroll',() => {
          
     } else {
         locationTwo.style.borderColor = '#bca0dc'
+        locationTwo.style.color = 'black'
         locationCounter.splice(1,1)
         changeLineHeight()
     }
@@ -68,6 +71,7 @@ window.addEventListener('scroll',() => {
        
     } else {
         locationThree.style.borderColor = '#9570DD'
+        locationThree.style.color = 'black'
          locationCounter.splice(2,1)
          changeLineHeight()
     }
@@ -80,6 +84,7 @@ window.addEventListener('scroll',() => {
       
     } else {
         locationFour.style.borderColor = '#bca0dc'
+        locationFour.style.color = 'black'
         locationCounter.splice(3,1)
     
     }
