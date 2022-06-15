@@ -9,6 +9,8 @@ let projects = document.getElementById('projects-link')
 let goals = document.getElementById('goals-link')
 let locationCounter = []
 
+console.log('LLB -->', locationLineBefore)
+
 const changeLineHeight = () => {
     if (locationCounter.length < 4) {
         locationLine.style.height = ((locationCounter.length / locationArr.length) * 120) + '%'
