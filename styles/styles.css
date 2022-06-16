@@ -249,6 +249,7 @@ body {
     /* background-color: rgb(191, 221, 240); */
     /* background-color: #bca0dc; */
     background-color: #9570DD;
+    background-color: #bca0dc;
 }
 
 
@@ -270,7 +271,7 @@ body {
     font-size: 30px;
     margin-top: 20px;
     color: #d3c2e5;
-    color: white;
+    color: black;
 }
 
 
@@ -295,10 +296,11 @@ body {
     align-items: center;
     background-color: #bca0dc;
     padding-bottom: 50px;
-    /* border: 3px solid #8139ED; */
+    border: 3px solid white;
     /* border-right: none; */
     /* margin-left: 2%; */
     border-radius: 6px;
+    background-color: #E69A8DFF;
 }
 
 .NW {
@@ -332,12 +334,13 @@ body {
     font-size: 23px;
     /* margin-right: 0.5%; */
     /* color: white; */
-    background-color: #bca0dc;
+    background-color: #9570DD;
     /* background-color: #8139ED; */
     line-height: 2rem;
     border: 3px solid white;
     /* border-right: none; */
     border-radius: 6px;
+    color: white;
 }
 
 .project-description {
@@ -349,8 +352,8 @@ body {
 
 .frontend,
 .backend {
-    /* background-color: rgb(238, 218, 218); */
-    /* border: 4px solid rgb(235, 174, 174); */
+    /* background-color: rgb(238, 218, 218);
+    border: 4px solid rgb(235, 174, 174); */
     width: 70%;
     height: 70px;
     padding-left: 1%;
@@ -360,6 +363,10 @@ body {
     text-decoration: none;
     font-size: 22px;
     /* color: black; */
+}
+
+.swiper-button-next {
+    color: #8139ED;
 }
 
 .goals-container {
@@ -377,7 +384,7 @@ body {
 
 
 .goals-header {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: white;
 }
 
@@ -391,12 +398,13 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    border: 4px solid white;
+    border: 3px solid white;
     font-size: 20px;
     flex-wrap: wrap;
     background-color: #bca0dc;
     background-color: #9570DD;
     color: white;
+    border-radius: 6px;
 }
 
 
