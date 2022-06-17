@@ -9,11 +9,26 @@ let projects = document.getElementById('projects-link')
 let goals = document.getElementById('goals-link')
 let locationCounter = []
 
+// about animation
+
+let hobbies = document.querySelector('.hobbies')
+let description = document.querySelector('.description')
+
 // this is for the goals list animation
 let listOne = document.querySelector('#list-1')
 let listTwo = document.querySelector('#list-2')
 let listThree = document.querySelector('#list-3')
 let listFour = document.querySelector('#completed-goals-list')
+
+function aboutAnimation() {
+    description.style.opacity = 1;
+    description.style.transform = 'translateY(5px)'
+
+    setTimeout(() => {
+        hobbies.style.opacity = 1;
+        hobbies.style.transform = 'translateX(-1px)'
+    }, 700)
+}
 
 
 function goalListAnimation() {
@@ -28,7 +43,6 @@ function goalListAnimation() {
 
     listFour.style.opacity = 1;
     listFour.style.transform = 'translateY(-5px)';
-
 }
 
 
@@ -65,6 +79,7 @@ window.addEventListener('scroll',() => {
     if (window.scrollY > 100) {
         changeProperties(0,'about',locationOne)
         changeLineHeight()
+        aboutAnimation()
          
     } else {
         locationOne.style.borderColor = '#9570DD'
