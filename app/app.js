@@ -9,6 +9,28 @@ let projects = document.getElementById('projects-link')
 let goals = document.getElementById('goals-link')
 let locationCounter = []
 
+// this is for the goals list animation
+let listOne = document.querySelector('#list-1')
+let listTwo = document.querySelector('#list-2')
+let listThree = document.querySelector('#list-3')
+let listFour = document.querySelector('#completed-goals-list')
+
+
+function goalListAnimation() {
+    listOne.style.opacity = 1;
+    listOne.style.transform = 'translateY(-5px)';
+
+    listTwo.style.opacity = 1;
+    listTwo.style.transform = 'translateY(-5px)';
+
+    listThree.style.opacity = 1;
+    listThree.style.transform = 'translateY(-5px)';
+
+    listFour.style.opacity = 1;
+    listFour.style.transform = 'translateY(-5px)';
+
+}
+
 
 
 const changeLineHeight = () => {
@@ -65,6 +87,8 @@ window.addEventListener('scroll',() => {
     if (window.scrollY > 900) {
         changeProperties(2,'goals',locationThree)
         changeLineHeight()
+        goalListAnimation()
+    
        
     } else {
         locationThree.style.borderColor = '#9570DD'
