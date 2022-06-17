@@ -27,7 +27,7 @@ function aboutAnimation() {
     setTimeout(() => {
         hobbies.style.opacity = 1;
         hobbies.style.transform = 'translateX(-1px)'
-    }, 700)
+    }, 750)
 }
 
 
