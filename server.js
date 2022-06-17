@@ -10,6 +10,7 @@ console.log('dirname -->', __dirname) // the current path where server.js is
 
 app.use(express.static("styles")) // linking external style sheet
 app.use(express.static("app")) // linking external javascript sheet
+app.use(express.static("pictures"))
 
 
 app.get('/home',(req,res) => {
