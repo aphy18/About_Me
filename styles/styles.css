@@ -66,7 +66,7 @@ body {
     align-items: center;
     background-color: rgb(221, 221, 80);
     background-color: rgb(156, 156, 156);
-    background-color: rgb(231, 157, 157);
+    background-color: rgb(245, 188, 188); 
 }
 
 
@@ -89,15 +89,15 @@ body {
 
 /* remember the location line is a container for before */
 
-/* .location-container::before {
+.location-container::before {
     content: '';
     width: 5px;
     height: 100%;
     position: absolute;
-    background-color: #9570DD;
+    background-color: rgb(156, 156, 156);
     z-index: -1;
     transition: all 0.3s ease-in;
-} */
+}
 
 .location-line {
     width: 5px;
@@ -128,14 +128,14 @@ body {
 #location-one,
 #location-three {
     background-color: #9570DD;
-    border: 3px solid #9570DD;
+    border: 5px solid #9570DD;
 
 }
 
 #location-two,
 #location-four {    
     background-color: #bca0dc;
-    border: 3px solid #bca0dc;
+    border: 5px solid #bca0dc;
 }
 
 
@@ -293,13 +293,13 @@ body {
     align-items: center;
     background-color: #8139ED;
     padding-bottom: 50px;
-    border: 3px solid #9570DD;
+    /* border: 3px solid #9570DD; */
     /* border-right: none; */
     /* margin-left: 2%; */
     border-radius: 6px;
     /* background-color: white; */
     /* background-color: rgb(231, 157, 157); */
-    border: 3px solid white;
+    /* border: 3px solid white; */
 }
 
 .NW {
