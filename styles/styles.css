@@ -128,14 +128,14 @@ body {
 #location-one,
 #location-three {
     background-color: #9570DD;
-    border: 5px solid #9570DD;
+    border: 4px solid #9570DD;
 
 }
 
 #location-two,
 #location-four {    
     background-color: #bca0dc;
-    border: 5px solid #bca0dc;
+    border: 4px solid #bca0dc;
 }
 
 
@@ -164,10 +164,12 @@ body {
 }
 
 .my-photo {
+    border: 4px solid #8139ED;
     border-radius: 50%;
     width: 250px;
     height: 250px;
     margin: 2%;
+    
 }
 
 .description {
