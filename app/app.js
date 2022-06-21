@@ -20,15 +20,15 @@ let listTwo = document.querySelector('#list-2')
 let listThree = document.querySelector('#list-3')
 let listFour = document.querySelector('#completed-goals-list')
 
-function aboutAnimation() {
-    description.style.opacity = 1;
-    description.style.transform = 'translateY(5px)'
+// function aboutAnimation() {
+//     description.style.opacity = 1;
+//     description.style.transform = 'translateY(5px)'
 
-    setTimeout(() => {
-        hobbies.style.opacity = 1;
-        hobbies.style.transform = 'translateX(-1px)'
-    }, 750)
-}
+//     setTimeout(() => {
+//         hobbies.style.opacity = 1;
+//         hobbies.style.transform = 'translateX(-1px)'
+//     }, 750)
+// }
 
 
 function goalListAnimation() {
@@ -74,12 +74,13 @@ goals.addEventListener('click', () => {
 
 
 
+
 window.addEventListener('scroll',() => {
+
 
     if (window.scrollY > 100) {
         changeProperties(0,'about',locationOne)
         changeLineHeight()
-        aboutAnimation()
          
     } else {
         locationOne.style.borderColor = '#9570DD'
