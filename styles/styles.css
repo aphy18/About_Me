@@ -209,7 +209,7 @@ body {
 }
 
 #contact {
-    height: 8%;
+    height: 14%;
     background-color: rgb(191, 221, 240);
     background-color: #bca0dc;
     border: none;
@@ -267,7 +267,7 @@ body {
     align-items: center;
     padding-bottom: 50px;
     border-radius: 6px;
-    border: 3px solid white;
+    /* border: 3px solid white; */
     background-color: #9570DD;
 }
 
@@ -382,6 +382,14 @@ body {
 }
 
 
+@media (max-width: 500px) {
+
+    #contact {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
 
 
 @media (max-width: 1900px) {
@@ -394,6 +402,11 @@ body {
 
 
 @media (max-width: 1500px) {
+
+    .text-container {
+        width: 80%;
+    }
+
     #about {
         flex-direction: column;
         /* background-color: black; */
@@ -435,6 +448,29 @@ body {
         flex-direction: row;
 
 
+    }
+
+    
+    #goals {
+        /* border: 3px solid red; */
+        overflow: hidden;
+        overflow-y: scroll;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 500px;
+    }
+
+    .goals-container {
+        /* border: 2px solid black; */
+        width: 95%;
+        height: 400px;
+        
+    }
+
+    .goals-list {
+        width: 60%;
+        height: 600px;
     }
 }
 
@@ -517,22 +553,4 @@ body {
     height: 2200px;
    }
 
-    #goals {
-        height: 800px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
- 
-    .goals-container {
-     /* border: 2px solid red; */
-     width: 50%;
-     height: 350px;
-     align-items: center;
-    }
- 
-    .goals-list {
-        width: 500px;
-        height: 65%;
-    }
 }
