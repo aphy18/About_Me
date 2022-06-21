@@ -209,7 +209,7 @@ body {
 }
 
 #contact {
-    height: 14%;
+    height: 200px;
     background-color: rgb(191, 221, 240);
     background-color: #bca0dc;
     border: none;
@@ -275,7 +275,7 @@ body {
     object-fit: cover;
     width: 90%;
     height: 75%;
-    margin-top: 50px;
+    margin-top: 15px;
     border-radius: 5px;
 }
 
@@ -283,7 +283,7 @@ body {
 #NW-1,
 #PML-1,
 #CTR-1 {
-    margin-top: 1000px;
+    margin-top: 950px;
 }
 
 #TA-1 {
@@ -392,7 +392,54 @@ body {
 }
 
 
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
+    #about {
+        flex-direction: column;
+        /* background-color: black; */
+        /* border: 2px solid black */
+        justify-content: center;
+        align-items: center;
+        /* border: 10px solid black; */
+        height: 700px;
+    }
+
+    
+    #about .my-photo {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .about-one {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        /* height: 1200px; */
+        /* border: 2px solid black; */
+    }
+    
+    .about-one .description {
+        width: 85%;
+        height: 300px;
+        align-items: center;
+        /* border: 2px solid red; */
+        overflow: hidden;
+        overflow-y: scroll;
+        border: 2px solid white;
+    }
+    
+    .about-one .hobbies {
+        width: 90%;
+        height: 100px;
+        margin-top: 30px;
+        /* border: 2px solid red; */
+    }
+    
+}
+
+
+@media (max-width: 1400px) {
 
     .master-container {
         height: 3800px;
@@ -409,61 +456,19 @@ body {
         display: none;
     }
 
-    #about {
-        flex-direction: column;
-        /* background-color: black; */
-        /* border: 2px solid black */
-        justify-content: center;
-        align-items: center;
-        /* border: 10px solid black; */
-        height: 1000px;
-    }
-
+    
     #projects {
         height: 725px;
     }
-
-    #about .my-photo {
-        width: 150px;
-        height: 150px;
-    }
-
-    .about-one {
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 2000px;
-        /* border: 2px solid black; */
-        overflow: hidden;
-        overflow-y: scroll;
-        border: 2px solid white;
-    }
-
-    .about-one .description {
-        width: 85%;
-        height: 700px;
-        align-items: center;
-        border: 2px solid red;
-    }
-
-    .about-one .hobbies {
-        width: 90%;
-        height: 30%;
-        margin-top: 30px;
-
-    }
-
     
     #goals {
         /* border: 3px solid red; */
         /* overflow: hidden;
         overflow-y: scroll; */
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
-        height: 3000px;
+        height: 1700px;
     }
 
     .goals-container {
@@ -479,13 +484,14 @@ body {
     }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
 
     .swiper {
         width: 100%;
-        height: 100%;
+        height: 1000px;
         /* border: 2px solid blue; */
         display: flex;
+        /* background-color: black; */
     }
 
     .swiper-wrapper {
@@ -498,6 +504,7 @@ body {
         /* border: 2px solid red; */
         justify-content: center;
         align-items: center;
+        /* height: 1000px; */
     }
 
 
