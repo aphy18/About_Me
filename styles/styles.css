@@ -442,7 +442,7 @@ body {
 @media (max-width: 1400px) {
 
     .master-container {
-        height: 3800px;
+        height: 3300px;
         flex-direction: column;
     }
 
