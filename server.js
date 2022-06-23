@@ -13,7 +13,7 @@ app.use(express.static("app")) // linking external javascript sheet
 app.use(express.static("pictures"))
 
 
-app.get('/home',(req,res) => {
+app.get('/',(req,res) => {
     res.render("index", { text: 'hello world' })
 })
 
