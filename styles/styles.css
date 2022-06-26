@@ -7,7 +7,8 @@ body {
     overflow: scroll;
     overflow-x: hidden;
     margin: 0;
-    font-family: 'Work Sans', sans-serif ;
+    font-family: 'Work Sans', sans-serif;
+    background-color: rgb(245, 188, 188);
 }
 
 
@@ -58,9 +59,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(221, 221, 80);
-    background-color: rgb(156, 156, 156);
-    background-color: rgb(245, 188, 188); 
 }
 
 
